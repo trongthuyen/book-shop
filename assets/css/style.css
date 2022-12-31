@@ -72,6 +72,10 @@ a {
     display: inline-block;
 }
 
+.navbar--logo-link {
+    font-size: 50px;
+}
+
 .title-introduce {
     font-size: 1.4rem;
     text-align: center;

@@ -9,6 +9,15 @@
   display: flex;
   margin-bottom: 12px;
   align-items: flex-end;
+  font-size: 18px;
+}
+
+.form-info__group.start .form-button {
+  margin-left: 12px;
+}
+
+.form-info__group.start {
+  align-items: center;
 }
 
 .form-info__group--label {
@@ -29,7 +38,7 @@
 .form-button {
   background-color: var(--text-color);
   color: var(--white-color);
-  padding: 8px 50px;
+  padding: 8px 30px;
   border: none;
   outline: none;
   border-radius: 50px;
