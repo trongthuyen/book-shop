@@ -1,0 +1,105 @@
+:root {
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color: #383838;
+    --header-color: #222222;
+    --separate-color: #9f9d9f79;
+    --primary-color: #087b39;
+    --dark-orange-color: #f03737;
+    --align: 1180px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+::selection {
+    background: rgba(255, 0, 128, 0.473);
+}
+
+html {
+    font-family: 'Syne Mono', monospace;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    min-width: var(--align);
+    overflow-y: auto;
+}
+
+body {
+    margin: 0px;
+}
+
+.grid {
+    width: var(--align);
+    min-width: var(--align);
+    margin: 0px auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__row--2-3 {
+    height: 66.6667%;
+}
+
+.grid__row--1-3 {
+    height: 33.3333%;
+    display: flex;
+}
+
+.grid__col {
+    width: 25%;
+}
+
+.grid__col--1-4 {
+    width: 25%;
+}
+
+.grid__col--2-4 {
+    width: 50%;
+    max-height: 100%;
+}
+
+.grid__col--1-3 {
+    width: 33.3333%;
+}
+
+.grid__col--3-4 {
+    width: 75%;
+}
+
+.grid__col--4-4 {
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes growth {
+    from {
+        height: 20%;
+    }
+    to {
+        height: 100%;
+    }
+}

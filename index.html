@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <header class="header" id="top">
+        <div class="header--introduce">
+            <div class="grid grid-align">
+                <div class="introduce">
+                    <ul class="introduce-list">
+                        <li class="introduce-item">
+                            <i class="fas fa-truck introduce-icon"></i>
+                            Miễn phí giao hàng
+                            <span class="title-introduce">
+                                Miễn phí giao hàng trên toàn quốc cho Đơn hàng từ 250.000đ.
+                            </span>
+                        </li>
+                        <li class="introduce-item">
+                            <i class="fas fa-book introduce-icon"></i>
+                            80.000 tựa sách
+                            <span class="title-introduce">
+                                Với hơn 80,000 đầu sách trong mọi lĩnh vực (và tiếp tục tăng mỗi ngày), Vinabook.com tự hào là nhà sách trên mạng có số lượng đầu sách lớn nhất Việt Nam, bạn có thể tìm được bất kỳ quyển sách nào cho mọi nhu cầu đọc sách của bạn.
+                            </span>
+                        </li>
+                        <li class="introduce-item last-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <a href="./pages/product.html" class="book-reader-link">
+                                White's book reader
+                            </a>
+                            <span class="title-introduce">
+                                Hơn 10,000 tựa sách và tạp chí trong thư viện sách khổng lồ của Vinabook Reader mọi lúc mọi nơi chỉ từ 825đ/ngày
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="react">
+                    <ul class="react-list">
+                        <li title="Thích" class="react-item">
+                            <i class="fas fa-thumbs-up react-icon"></i>
+                            Thích
+                            <p class="count-like">9,5K</p>
+                        </li>
+                        <li class="react-item">
+                            <a href="./pages/product.html" class="react--share-link">Chia sẻ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header--navbar">
+            <div class="grid grid-align grid-navbar">
+                <div class="navbar--logo">
+                    <a href="./pages/product.html" class="navbar--logo-link">
+                        <img src="./assets/img/logo/vnb_logo_2x.png" alt="Logo" class="navbar__logo-img">
+                    </a>
+                </div>
+
+                <div class="navbar--search">
+                    <i class="ti-search navbar--search__icon"></i>
+                    <input type="text" class="navbar--search__input" placeholder="Tìm kiếm tựa sách, tác giả">
+                    <span class="navbar--search__confirm">Tìm kiếm</span>
+                    <div class="suggests-search">
+                        <div class="suggests-search--heading">TỪ KHÓA HOT</div>
+                        <ul class="suggests-search--list">
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">blockchain</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">Nguyễn Nhật Ánh</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">mắt biếc</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">kinh tế</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">ielts</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">sách du lịch</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">hạnh phúc xanh</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">blockchain</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">bạn sinh ra để sống</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">Tony Buổi Sáng</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">đắc nhân tâm</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">tôi không thích ồn ào</a>
+                            </li>
+                            <li class="suggests-search--item">
+                                <a href="./pages/product.html" class="suggests-search--item-link">tư duy thịnh vượng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="navbar--cart none-empty-cart">
+                    <a href="./pages/product.html" class="navbar--cart__link">
+                        <i class="ti-shopping-cart navbar--cart__icon"></i>
+                    </a>
+                    <span class="item--quantity">3</span>
+
+                    <img src="./assets/img/cart-list/empty.ae55eb89.png" alt="" class="mycart--empty">
+
+                    <div class="mycart">
+                        <div class="mycart--heading">GIỎ HÀNG CỦA TÔI</div>
+                        <span class="mycart--buy">MUA</span>
+                        <ul class="mycart--list">
+                            <li class="mycart--item">
+                                <input type="checkbox" name="select" id="" class="select-item">
+                                <img src="./assets/img/cart-list/366626_luat-tam-thuc-giai-ma-ma-tran-vu-tru.jpg" alt="" class="mycart--item-img">
+                                <div class="mycart--item-info">
+                                    <h4 class="item-info__name">Luật Tâm Thức - Giải Mã Ma Trận Vũ Trụ</h4>
+                                    <p class="item-info__author">Tác giả: Ngô Sa Thạch</p>
+                                    <p class="item-info__description">Phân loại: sách khoa học</p>
+                                </div>
+                                <div class="mycart--item-order">
+                                    <p class="item-order__quantity">x1</p>
+                                    <p class="item-order__price">240.000đ</p>
+                                </div>
+                            </li>
+                            <li class="mycart--item">
+                                <input type="checkbox" name="select" id="" class="select-item">
+                                <img src="./assets/img/cart-list/366626_luat-tam-thuc-giai-ma-ma-tran-vu-tru.jpg" alt="" class="mycart--item-img">
+                                <div class="mycart--item-info">
+                                    <h4 class="item-info__name">Luật Tâm Thức - Giải Mã Ma Trận Vũ Trụ</h4>
+                                    <p class="item-info__author">Tác giả: Ngô Sa Thạch</p>
+                                    <p class="item-info__description">Phân loại: sách khoa học</p>
+                                </div>
+                                <div class="mycart--item-order">
+                                    <p class="item-order__quantity">x1</p>
+                                    <p class="item-order__price">240.000đ</p>
+                                </div>
+                            </li>
+                            <li class="mycart--item">
+                                <input type="checkbox" name="select" id="" class="select-item">
+                                <img src="./assets/img/cart-list/366626_luat-tam-thuc-giai-ma-ma-tran-vu-tru.jpg" alt="" class="mycart--item-img">
+                                <div class="mycart--item-info">
+                                    <h4 class="item-info__name">Luật Tâm Thức - Giải Mã Ma Trận Vũ Trụ</h4>
+                                    <p class="item-info__author">Tác giả: Ngô Sa Thạch</p>
+                                    <p class="item-info__description">Phân loại: sách khoa học</p>
+                                </div>
+                                <div class="mycart--item-order">
+                                    <p class="item-order__quantity">x1</p>
+                                    <p class="item-order__price">240.000đ</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mycart--footer">
+                            <span class="mycart--viewcart">ĐẾN GIỎ HÀNG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar--login user">
+                    
+                    <!-- Chưa đăng nhập -->
+                    <span class="navbar--login__options">
+                        Đăng nhập
+                    </span>
+                    <span class="separate"></span>
+                    <span class="navbar--login__options">
+                        Đăng ký
+                    </span>
+
+                    <!-- Đã đăng nhập -->
+                    <div class="user-box">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span class="navbar--login__user">
+                            Hành Lá
+                        </span>
+                        <div class="user__menu">
+                            <ul class="user__menu--list">
+                                <li class="user__menu--item">
+                                    <a href="./pages/product.html" class="user__menu--item-link">Thông Tin Cá Nhân</a>
+                                </li>
+                                <li class="user__menu--item">
+                                    <a href="./pages/product.html" class="user__menu--item-link">Đơn Hàng</a>
+                                </li>
+                                <li class="user__menu--item">
+                                    <a href="./pages/product.html" class="user__menu--item-link">Điểm Tích Lũy(0)</a>
+                                </li>
+                                <li class="user__menu--item">
+                                    <a href="./pages/product.html" class="user__menu--item-link">Danh Sách Yêu Thích</a>
+                                </li>
+                                <li class="user__menu--item">
+                                    <a href="./pages/product.html" class="user__menu--item-link">Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script type="text/javascript" src="https://itexpress.vn/js/noel.js"></script> -->
+    </header>
+
+    <div class="header--menu">
+        <div class="header--menu__navbar">
+            <div class="grid menu--navbar">
+                <div class="menu--catalog">
+                    <i class="ti-align-left menu--catalog__icon"></i>
+                    <h1 class="menu--catalog__text">Danh Mục Sách</h1>
+                    <i class="ti-angle-down menu--catalog__icon"></i>
+                </div>
+                <div class="menu--support">
+                    <span class="menu--support__contact">
+                        <i class="fas fa-phone-alt menu--catalog__icon"></i>
+                        <p class="menu--support__text">
+                            Hotline:
+                            <p class="hotline">0353472233</p>
+                        </p>
+                        <span class="title-introduce">
+                            Tổng đài chăm sóc và Hỗ trợ Khách hàng hoạt động suốt 7 ngày trong tuần
+                            Thứ 2 - 7: hoạt động từ 7:30 - 20:00
+                            Chủ nhật: hoạt động từ 8:00 - 17:00
+                        </span>
+                    </span>
+                    <span class="menu--support__contact" title="Hỗ trợ trực tuyến">
+                        <i class="far fa-comments menu--catalog__icon"></i>
+                        <a href="./pages/contact.html" class="menu--support__text">Hỗ trợ trực tuyến</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__col">
+                    <ul class="object--catalog__list">
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Bán Chạy
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Mới Phát Hành
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Sắp Phát Hành
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Ngoại Văn
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item new-item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Blockchain
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Kinh Tế
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Văn Học Trong Nước
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Văn Học Nước Ngoài
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Thưởng Thức - Đời Sống
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Thiếu Nhi
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Phát Triển Bản Thân
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Tin Học - Ngoại Ngữ
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Chuyên Ngành
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Sách Giáo Khoa - Giáo Trình
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                        <li class="object--catalog__item">
+                            <a href="./pages/product.html" class="object--catalog__item-link">
+                                Tạp Chí - Văn Phòng Phẩm
+                                <p>MỚI</p>
+                                <i class="ti-angle-right object--catalog__item-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__col--2-4">
+                    <div class="grid__row--2-3">
+                        <div class="some-book">
+                            <a href="./pages/product.html" class="some-book__link">
+                                <img src="./assets/img/hallway_hotbook/con-chim-bay-ve.jpg" alt="Con Chim Xanh Biếc Bay Về" class="some-book__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__row--1-3">
+                        <div class="grid__col--2-4">
+                            <div class="some-book">
+                                <a href="./pages/product.html" class="some-book__link">
+                                    <img src="./assets/img/hallway_hotbook/con-nguoi.jpg" alt="Con Người" class="some-book__img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__col--2-4">
+                            <div class="some-book">
+                                <a href="./pages/product.html" class="some-book__link">
+                                    <img src="./assets/img/hallway_hotbook/toa-sang-cung-Jessica-Jung.jpg" alt="Tỏa Sáng Cùng Jessica Jung" class="some-book__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col">
+                    <div class="grid__row--1-3">
+                        <div class="some-book">
+                            <a href="./pages/product.html" class="some-book__link">
+                                <img src="./assets/img/hallway_hotbook/thay-doi-cuoc-song-voi-nhan-so-hoc.jpg" alt="Thay Đổi Cuộc Sống Với Nhân Số Học" class="some-book__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__row--1-3">
+                        <div class="some-book">
+                            <a href="./pages/product.html" class="some-book__link">
+                                <img src="./assets/img/hallway_hotbook/gio-heo-may-ngay-nang-gian-doan.jpg" alt="Gió Heo May Ngày Nắng Gián Đoạn" class="some-book__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__row--1-3">
+                        <div class="some-book">
+                            <a href="./pages/product.html" class="some-book__link">
+                                <img src="./assets/img/hallway_hotbook/cach-netflix-xay-dung-con-nguoi.jpg" alt="Cách Netflix Xây Dựng Con Người" class="some-book__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__col--3-4">
+                    <div class="container--box">
+                        <div class="container--header">
+                            <h1 class="container--heading">Sách Mới Của Tác Giả Dương Thụy</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--content crimson-background">
+                            <div class="content__frame-img">
+                                <a href="./pages/product.html" class="content__link">
+                                    <img src="./assets/img/book-container/yeu-em-bang-mat-giu-em-bang-tim.jpg" alt="Yêu Em Bằng Mắt, Giữ Em Bằng Tâm Hồn" class="content__img">
+                                </a>
+                            </div>
+                            <div class="content__frame-info">
+                                <div class="content__frame-info--header">
+                                    <a href="./pages/product.html" class="content__title">Yêu Em Bằng Mắt, Giữ Em Bằng Tim</a>
+                                    <p class="content__author">Dương Thụy</p>
+                                </div>
+                                <div class="content__frame-info--description">
+                                    <p class="content__description">
+                                        Phương đã từng có một tình yêu trong trẻo tinh khôi ở tuổi 18 với Trung - người trợ lý tài giỏi, trung thành của bà nội.
+                                        Nhưng họ sớm bị chia cắt khi Phương qua Pháp đoàn tụ với mẹ, và mất liên lạc trong 10 năm ròng rã.
+                                        Định mệnh cuối cùng cũng cho họ gặp nhau, giải tỏa những hiểu lầm và nối lại mối duyên xưa. Nhưng thách thức vẫn chưa hết.
+                                        Một lần nữa, Phương và Trung phải đứng trước lựa chọn nắm tay hoặc buông nhau ra...
+                                        Truyện diễn ra với bối cảnh Pháp và Việt Nam, với những phân đoạn tả cảnh tả tình lãng mạn bay bổng,
+                                        những phút bên nhau đầy say đắm, nhưng cũng không thiếu những gai góc có thể chia rẽ mọi đôi tình nhân - cho dù họ đã có
+                                        một khởi đầu đẹp đẽ như thế nào chăng nữa. Vì yêu nhau rõ ràng là từ ánh mắt, nhưng muốn ở bên nhau trọn đời, cần phải có
+                                        một con tim rộng mở, bao dung...
+                                    </p>
+                                </div>
+                                <div class="content__frame-info--footer">
+                                    <div class="content__price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <p class="content__price--previous">175.000đ</p>
+                                        <p class="content__price--current">140.000đ</p>
+                                    </div>
+                                    <div class="content__purchase">CHỐT ĐƠN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ======================================================================== -->
+
+                    <div class="container--box">
+                        <div class="container--header more-view-item">
+                            <h1 class="container--heading">Sách Bán Chạy</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--block">
+                            <ul class="container--block__list">
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/book-container/yeu-em-bang-mat-giu-em-bang-tim.jpg" alt="yeu-em-bang-mat-giu-em-bang-tim" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Yêu Em Bằng Mắt, Giữ Em Bằng Tim</a>
+                                                <p class="description--header__author">Dương Thụy</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Phương đã từng có một tình yêu trong trẻo tinh khôi ở tuổi 18 với Trung - người trợ lý tài giỏi, trung thành của bà nội...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">175.000đ</p>
+                                            <p class="price--box-current">140.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/li-qua-de-quai.jpg" alt="li-qua-de-noi-quai" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Lỳ Quá Để Nói Quài</a>
+                                                <p class="description--header__author">Anh Cầm Fact</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Anh Cầm Fact là fanpage đại diện bởi một anh chàng khó ở, sẵn sàng nói hộ tiếng lòng của mọi người về những vấn đề khó đỡ trong cuộc sống. Dù mới ra đời đầu năm 2020, Anh Cầm Fact đã có một lượng tương tác khủng nhờ những hình ảnh và</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-21%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">78.000đ</p>
+                                            <p class="price--box-current">62.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/dung-yeu-tham-nua-to-tinh-di.jpg" alt="dung-yeu-tham-nua-to-tinh-di" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Đừng Yêu Thầm Nữa Tỏ Tình Đi</a>
+                                                <p class="description--header__author">Trần Minh Phương Thảo</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Nổi tiếng sau một đêm với biệt danh “hotgirl bóng bàn”, Trần Minh Phương Thảo đã trở thành cái tên không còn xa lạ với giới trẻ Việt. Cô gái nổi lên nhờ ngoại hình xinh xắn cùng thành tích thi đấu siêu “khủng” nay đã trở thành người dẫn</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-22%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">86.000đ</p>
+                                            <p class="price--box-current">67.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="container--block__list">
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/range-hieu-sau-biet-rong-kieu-gi-cung-thang.jpg" alt="range-hieu-sau-biet-rong-kieu-gi-cung-thang" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Range - Hiểu Sâu Biết Rộng Kiểu Gì Cũng Thắng</a>
+                                                <p class="description--header__author">David Epstein</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">199.000đ</p>
+                                            <p class="price--box-current">159.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/nguon-goc-dich-benh.jpg" alt="nguon-goc-dich-benh" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Nguồn Gốc Dịch Bệnh</a>
+                                                <p class="description--header__author">David Quammen</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">249.000đ</p>
+                                            <p class="price--box-current">199.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/yeu-trong-tinh-thuc-voi-osho.jpg" alt="yeu-trong-tinh-thuc-voi-osho" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Yêu Trong Tỉnh Thức Với Osho</a>
+                                                <p class="description--header__author">Osho</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Những người đói khát trong nhu cầu, những người luôn kỳ vọng ở tình yêu chính là những người đau khổ nhất. Hai kẻ đói khát tìm thấy nhau trong một mối quan hệ yêu đương cùng những kỳ vọng người kia sẽ mang đến cho mình thứ mình cần – về cơ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">168.000đ</p>
+                                            <p class="price--box-current">135.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- ========================================================================= -->
+                    
+                    <div class="container--box">
+                        <div class="container--header">
+                            <h1 class="container--heading">Sách Hay</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--content orange-background">
+                            <div class="content__frame-img">
+                                <a href="./pages/product.html" class="content__link">
+                                    <img src="./assets/img/book-container/muon-kiep-nhan-sinh.jpg" alt="Muôn Kiếp Nhân Sinh" class="content__img">
+                                </a>
+                            </div>
+                            <div class="content__frame-info">
+                                <div class="content__frame-info--header">
+                                    <a href="./pages/product.html" class="content__title">Muôn Kiếp Nhân Sinh - Many Times, Many Lives - Tập 2</a>
+                                    <p class="content__author">Nguyên Phong</p>
+                                </div>
+                                <div class="content__frame-info--description">
+                                    <p class="content__description">
+                                        <!-- Phương đã từng có một tình yêu trong trẻo tinh khôi ở tuổi 18 với Trung - người trợ lý tài giỏi, trung thành của bà nội.
+                                            Nhưng họ sớm bị chia cắt khi Phương qua Pháp đoàn tụ với mẹ, và mất liên lạc trong 10 năm ròng rã.
+                                            Định mệnh cuối cùng cũng cho họ gặp nhau, giải tỏa những hiểu lầm và nối lại mối duyên xưa. Nhưng thách thức vẫn chưa hết.
+                                            Một lần nữa, Phương và Trung phải đứng trước lựa chọn nắm tay hoặc buông nhau ra...
+                                            Truyện diễn ra với bối cảnh Pháp và Việt Nam, với những phân đoạn tả cảnh tả tình lãng mạn bay bổng,
+                                            những phút bên nhau đầy say đắm, nhưng cũng không thiếu những gai góc có thể chia rẽ mọi đôi tình nhân - cho dù họ đã có
+                                            một khởi đầu đẹp đẽ như thế nào chăng nữa. Vì yêu nhau rõ ràng là từ ánh mắt, nhưng muốn ở bên nhau trọn đời, cần phải có
+                                            một con tim rộng mở, bao dung... -->
+                                        </p>
+                                </div>
+                                <div class="content__frame-info--footer">
+                                    <div class="content__price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <p class="content__price--previous">268.000đ</p>
+                                        <p class="content__price--current">214.000đ</p>
+                                    </div>
+                                    <div class="content__purchase dark-orange-background">CHỐT ĐƠN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="container--box">
+                        <div class="container--header more-view-item">
+                            <h1 class="container--heading">Sách Bán Chạy</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--block">
+                            <ul class="container--block__list">
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/book-container/yeu-em-bang-mat-giu-em-bang-tim.jpg" alt="yeu-em-bang-mat-giu-em-bang-tim" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Yêu Em Bằng Mắt, Giữ Em Bằng Tim</a>
+                                                <p class="description--header__author">Dương Thụy</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Phương đã từng có một tình yêu trong trẻo tinh khôi ở tuổi 18 với Trung - người trợ lý tài giỏi, trung thành của bà nội...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">175.000đ</p>
+                                            <p class="price--box-current">140.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/li-qua-de-quai.jpg" alt="li-qua-de-noi-quai" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Lỳ Quá Để Nói Quài</a>
+                                                <p class="description--header__author">Anh Cầm Fact</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Anh Cầm Fact là fanpage đại diện bởi một anh chàng khó ở, sẵn sàng nói hộ tiếng lòng của mọi người về những vấn đề khó đỡ trong cuộc sống. Dù mới ra đời đầu năm 2020, Anh Cầm Fact đã có một lượng tương tác khủng nhờ những hình ảnh và</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-21%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">78.000đ</p>
+                                            <p class="price--box-current">62.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/dung-yeu-tham-nua-to-tinh-di.jpg" alt="dung-yeu-tham-nua-to-tinh-di" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Đừng Yêu Thầm Nữa Tỏ Tình Đi</a>
+                                                <p class="description--header__author">Trần Minh Phương Thảo</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Nổi tiếng sau một đêm với biệt danh “hotgirl bóng bàn”, Trần Minh Phương Thảo đã trở thành cái tên không còn xa lạ với giới trẻ Việt. Cô gái nổi lên nhờ ngoại hình xinh xắn cùng thành tích thi đấu siêu “khủng” nay đã trở thành người dẫn</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-22%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">86.000đ</p>
+                                            <p class="price--box-current">67.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="container--block__list">
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/range-hieu-sau-biet-rong-kieu-gi-cung-thang.jpg" alt="range-hieu-sau-biet-rong-kieu-gi-cung-thang" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Range - Hiểu Sâu Biết Rộng Kiểu Gì Cũng Thắng</a>
+                                                <p class="description--header__author">David Epstein</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">199.000đ</p>
+                                            <p class="price--box-current">159.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/nguon-goc-dich-benh.jpg" alt="nguon-goc-dich-benh" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Nguồn Gốc Dịch Bệnh</a>
+                                                <p class="description--header__author">David Quammen</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">249.000đ</p>
+                                            <p class="price--box-current">199.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/yeu-trong-tinh-thuc-voi-osho.jpg" alt="yeu-trong-tinh-thuc-voi-osho" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Yêu Trong Tỉnh Thức Với Osho</a>
+                                                <p class="description--header__author">Osho</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Những người đói khát trong nhu cầu, những người luôn kỳ vọng ở tình yêu chính là những người đau khổ nhất. Hai kẻ đói khát tìm thấy nhau trong một mối quan hệ yêu đương cùng những kỳ vọng người kia sẽ mang đến cho mình thứ mình cần – về cơ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">168.000đ</p>
+                                            <p class="price--box-current">135.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="container--box">
+                        <div class="container--header">
+                            <h1 class="container--heading">Đặt Trước Ngay</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--content crimson-background">
+                            <div class="content__frame-img">
+                                <a href="./pages/product.html" class="content__link">
+                                    <img src="./assets/img/book-container/luat-tam-thuc.jpg" alt="Muôn Kiếp Nhân Sinh" class="content__img">
+                                </a>
+                            </div>
+                            <div class="content__frame-info">
+                                <div class="content__frame-info--header">
+                                    <a href="./pages/product.html" class="content__title">Luật Tâm Thức - Giải Mã Ma Trận Vũ Trụ</a>
+                                    <p class="content__author">Ngô Sa Thạch</p>
+                                </div>
+                                <div class="content__frame-info--description">
+                                    <p class="content__description">
+                                        <!-- Phương đã từng có một tình yêu trong trẻo tinh khôi ở tuổi 18 với Trung - người trợ lý tài giỏi, trung thành của bà nội.
+                                        Nhưng họ sớm bị chia cắt khi Phương qua Pháp đoàn tụ với mẹ, và mất liên lạc trong 10 năm ròng rã.
+                                        Định mệnh cuối cùng cũng cho họ gặp nhau, giải tỏa những hiểu lầm và nối lại mối duyên xưa. Nhưng thách thức vẫn chưa hết.
+                                        Một lần nữa, Phương và Trung phải đứng trước lựa chọn nắm tay hoặc buông nhau ra...
+                                        Truyện diễn ra với bối cảnh Pháp và Việt Nam, với những phân đoạn tả cảnh tả tình lãng mạn bay bổng,
+                                        những phút bên nhau đầy say đắm, nhưng cũng không thiếu những gai góc có thể chia rẽ mọi đôi tình nhân - cho dù họ đã có
+                                        một khởi đầu đẹp đẽ như thế nào chăng nữa. Vì yêu nhau rõ ràng là từ ánh mắt, nhưng muốn ở bên nhau trọn đời, cần phải có
+                                        một con tim rộng mở, bao dung... -->
+                                    </p>
+                                </div>
+                                <div class="content__frame-info--footer">
+                                    <div class="content__price">
+                                        <p class="content__price--discount">-15%</p>
+                                        <p class="content__price--previous">282.000đ</p>
+                                        <p class="content__price--current">240.000đ</p>
+                                    </div>
+                                    <div class="content__purchase">CHỐT ĐƠN</div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+
+                    <div class="container--box">
+                        <div class="container--header more-view-item">
+                            <h1 class="container--heading">Sách Bán Chạy</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--block">
+                            <ul class="container--block__list">
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/book-container/yeu-em-bang-mat-giu-em-bang-tim.jpg" alt="yeu-em-bang-mat-giu-em-bang-tim" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Yêu Em Bằng Mắt, Giữ Em Bằng Tim</a>
+                                                <p class="description--header__author">Dương Thụy</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Phương đã từng có một tình yêu trong trẻo tinh khôi ở tuổi 18 với Trung - người trợ lý tài giỏi, trung thành của bà nội...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">175.000đ</p>
+                                            <p class="price--box-current">140.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/li-qua-de-quai.jpg" alt="li-qua-de-noi-quai" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Lỳ Quá Để Nói Quài</a>
+                                                <p class="description--header__author">Anh Cầm Fact</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Anh Cầm Fact là fanpage đại diện bởi một anh chàng khó ở, sẵn sàng nói hộ tiếng lòng của mọi người về những vấn đề khó đỡ trong cuộc sống. Dù mới ra đời đầu năm 2020, Anh Cầm Fact đã có một lượng tương tác khủng nhờ những hình ảnh và</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-21%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">78.000đ</p>
+                                            <p class="price--box-current">62.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/dung-yeu-tham-nua-to-tinh-di.jpg" alt="dung-yeu-tham-nua-to-tinh-di" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Đừng Yêu Thầm Nữa Tỏ Tình Đi</a>
+                                                <p class="description--header__author">Trần Minh Phương Thảo</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Nổi tiếng sau một đêm với biệt danh “hotgirl bóng bàn”, Trần Minh Phương Thảo đã trở thành cái tên không còn xa lạ với giới trẻ Việt. Cô gái nổi lên nhờ ngoại hình xinh xắn cùng thành tích thi đấu siêu “khủng” nay đã trở thành người dẫn</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-22%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">86.000đ</p>
+                                            <p class="price--box-current">67.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="container--block__list">
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/range-hieu-sau-biet-rong-kieu-gi-cung-thang.jpg" alt="range-hieu-sau-biet-rong-kieu-gi-cung-thang" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Range - Hiểu Sâu Biết Rộng Kiểu Gì Cũng Thắng</a>
+                                                <p class="description--header__author">David Epstein</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">199.000đ</p>
+                                            <p class="price--box-current">159.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/nguon-goc-dich-benh.jpg" alt="nguon-goc-dich-benh" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Nguồn Gốc Dịch Bệnh</a>
+                                                <p class="description--header__author">David Quammen</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">249.000đ</p>
+                                            <p class="price--box-current">199.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="grid__col--1-3 block__item">
+                                    <div class="block__item--info-book">
+                                        <a href="./pages/product.html" class="block__item--link-img">
+                                            <img src="./assets/img/sach-ban-chay/yeu-trong-tinh-thuc-voi-osho.jpg" alt="yeu-trong-tinh-thuc-voi-osho" class="block__item--img">
+                                        </a>
+                                        <div class="block__item--description">
+                                            <div class="item--description__header">
+                                                <a href="./pages/product.html" class="description--header__name">Yêu Trong Tỉnh Thức Với Osho</a>
+                                                <p class="description--header__author">Osho</p>
+                                            </div>
+                                            <div class="description--text">
+                                                <a href="./pages/product.html" class="description--text__link">Những người đói khát trong nhu cầu, những người luôn kỳ vọng ở tình yêu chính là những người đau khổ nhất. Hai kẻ đói khát tìm thấy nhau trong một mối quan hệ yêu đương cùng những kỳ vọng người kia sẽ mang đến cho mình thứ mình cần – về cơ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block__item--price">
+                                        <p class="content__price--discount">-20%</p>
+                                        <span class="block__item--price--box">
+                                            <p class="price--box-previous">168.000đ</p>
+                                            <p class="price--box-current">135.000đ</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="container--box">
+                        <div class="container--header">
+                            <h1 class="container--heading">Tác Giả Nổi Bật</h1>
+                            <a href="./pages/product.html" class="more-view">Xem thêm ></a>
+                        </div>
+                        <div class="container--content author white-background">
+                            <div class="content__info--author">
+                                <a href="./pages/product.html" class="info--author-link">
+                                    <img src="./assets/img/author/Nguyen_Phong/Nguyen_Phong.jpg" alt="Tác giả Nguyên Phong" class="info--author-img">
+                                </a>
+                                <div class="info--author-description">
+                                    <a href="./pages/product.html" class="info--author-name">Nguyên Phong</a>
+                                    <p class="info--author-story">
+                                        Nguyên Phong tên thật là Vũ Văn Du, sinh năm 1950 tại Hà Nội. Năm 1968, ông rời khỏi Việt Nam, sang Hoa Kỳ
+                                        du học hai nghành Sinh vật học và Điện toán, sau đó ông sống và làm việc tại Hoa Kỳ cho đến nay.
+                                        Bên cạnh vai trò là một nhà khoa học, Nguyên Phong còn là dịch giả của hàng loạt sách về văn hóa
+                                        và tâm linh phương Đông rất nổi tiếng.
+                                        Trong số đó, có thể kể đến: Hành Trình Về Phương Đông, Ngọc Sáng Trong Hoa Sen,
+                                        Bên Rặng Tuyết Sơn, Hoa Sen Trên Tuyết, Hoa Trôi Trên Sóng Nước, Trở Về Từ Xứ Tuyết,
+                                        Minh Triết Trong Đời Sống Ăn Uống, Đường Mây Qua Xứ Tuyết…
+                                        <br>
+                                        <a href="./pages/product.html" class="info--author-story__more-view">Xem thêm</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content__outstanding--book">
+                                <ul class="outstanding--book-list">
+                                    <li class="outstanding--book-item">
+                                        <a href="./pages/product.html" class="outstanding--book-link">
+                                            <img src="./assets/img/author/Nguyen_Phong/sach_noi_bat/duong-may-qua-xu-tuyet-tai-ban-2021.jpg" alt="duong-may-qua-xu-tuyet-tai-ban-2021" class="outstanding--book-img">
+                                        </a>
+                                        <a href="./pages/product.html" class="outstanding--book-name">Đường Mây Qua Xứ Tuyết (Tái Bản 2021)</a>
+                                    </li>
+                                    <li class="outstanding--book-item">
+                                        <a href="./pages/product.html" class="outstanding--book-link">
+                                            <img src="./assets/img/author/Nguyen_Phong/sach_noi_bat/dau-chan-tren-cat-tai-ban-2021.jpg" alt="dau-chan-tren-cat-tai-ban-2021" class="outstanding--book-img">
+                                        </a>
+                                        <a href="./pages/product.html" class="outstanding--book-name">Đường Mây Qua Xứ Tuyết (Tái Bản 2021)</a>
+                                    </li>
+                                    <li class="outstanding--book-item">
+                                        <a href="./pages/product.html" class="outstanding--book-link">
+                                            <img src="./assets/img/author/Nguyen_Phong/sach_noi_bat/hanh-trinh-ve-phuong-dong-tai-ban-2021.jpg" alt="hanh-trinh-ve-phuong-dong-tai-ban-2021" class="outstanding--book-img">
+                                        </a>
+                                        <a href="./pages/product.html" class="outstanding--book-name">Đường Mây Qua Xứ Tuyết (Tái Bản 2021)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid__col--1-4">
+                    
+                    <ul class="lib--book-list">
+                        <div class="container--header">
+                            <h1 class="container--heading">Nổi Bật Trong Tuần</h1>
+                            <!-- <a href="./pages/product.html" class="more-view">Xem thêm ></a> -->
+                        </div>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich.jpg" alt="ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/duong-xua-may-trang-bia-cung-tai-ban-2020.jpg" alt="duong-xua-may-trang-bia-cung-tai-ban-2020" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info rate">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/li-qua-de-noi-quai.jpg" alt="li-qua-de-noi-quai" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="lib--book-list">
+                        <div class="container--header">
+                            <h1 class="container--heading">Nổi Bật Trong Tuần</h1>
+                            <!-- <a href="./pages/product.html" class="more-view">Xem thêm ></a> -->
+                        </div>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich.jpg" alt="ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/duong-xua-may-trang-bia-cung-tai-ban-2020.jpg" alt="duong-xua-may-trang-bia-cung-tai-ban-2020" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info rate">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/li-qua-de-noi-quai.jpg" alt="li-qua-de-noi-quai" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="lib--book-list">
+                        <div class="container--header">
+                            <h1 class="container--heading">Nổi Bật Trong Tuần</h1>
+                            <!-- <a href="./pages/product.html" class="more-view">Xem thêm ></a> -->
+                        </div>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich.jpg" alt="ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/duong-xua-may-trang-bia-cung-tai-ban-2020.jpg" alt="duong-xua-may-trang-bia-cung-tai-ban-2020" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info rate">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/li-qua-de-noi-quai.jpg" alt="li-qua-de-noi-quai" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/li-qua-de-noi-quai.jpg" alt="li-qua-de-noi-quai" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/li-qua-de-noi-quai.jpg" alt="li-qua-de-noi-quai" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="lib--book-list">
+                        <div class="container--header">
+                            <h1 class="container--heading">Nổi Bật Trong Tuần</h1>
+                            <!-- <a href="./pages/product.html" class="more-view">Xem thêm ></a> -->
+                        </div>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich.jpg" alt="ehon-thong-minh-cam-xuc-nhung-cam-xuc-cua-gaston-con-rat-phan-khich" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/duong-xua-may-trang-bia-cung-tai-ban-2020.jpg" alt="duong-xua-may-trang-bia-cung-tai-ban-2020" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info rate">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lib--book-item">
+                            <a href="./pages/product.html" class="lib--book-img-link">
+                                <img src="./assets/img/library/sach-ban-chay-trong-tuan/li-qua-de-noi-quai.jpg" alt="li-qua-de-noi-quai" class="lib--book-img">
+                            </a>
+                            <div class="lib--book-info">
+                                <a href="./pages/product.html" class="lib--book-name">Ehon Thông Minh, Cảm Xúc - Những Cảm Xúc Của Gaston: Con Rất Phấn Khích</a>
+                                <p class="lib--book-author">Aurélie Chien Chow Chine</p>
+                                <a href="./pages/product.html" class="lib--book-rate">
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                    <i class="fas fa-star lib--book-rate-icon"></i>
+                                </a>
+                                <div class="lib--book-price">
+                                    <p class="lib--book-price-previous">39.000đ</p>
+                                    <p class="lib--book-price-current">31.000đ</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="fanpage">
+                        <div class="fanpage--vnb">
+                            <a href="./pages/product.html" class="fanpage--vnb-link">
+                                <img src="./assets/img/logo/vnb.jpg" alt="vinabook" class="fanpage--vnb-img">
+                            </a>
+                            <div class="fanpage--vnb-link">
+                                <a href="./pages/product.html">
+                                    Vinabook<i class="fas fa-check-circle"></i>
+                                </a>
+                                <p>453.665 lượt thích</p>
+                            </div>
+                        </div>
+                        <div class="fanpage--active">
+                            <a href="./pages/product.html" class="like-fanpage">
+                                <i class="fab fa-facebook-square"></i>
+                                Thích Trang
+                            </a>
+                            <a href="./pages/product.html" class="share-fanpage">
+                                <i class="fas fa-share"></i>
+                                Chia sẻ
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="qr-code">
+                        <a href="./pages/product.html" class="qr-code-link">
+                            <img src="./assets/img/qr-code/App-VNB_opt4.png" alt="" class="qr-code--img">
+                        </a>
+                        <a href="./pages/product.html" class="qr-code-link">
+                            <img src="./assets/img/qr-code/App-VNBR.png" alt="" class="qr-code--img">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer--grid">
+            <div class="footer--grid__row">
+                <div class="footer--grid__col col-12">
+                    <div class="contact-button">
+                        <a href="./pages/contact.html" class="link-to-contact">
+                            Liên hệ với chúng tôi
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer--grid__row">
+                <div class="footer--grid__col col-4">
+                    <div class="footer-col-tiem">
+                        Item 1
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 2
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 3
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 4
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 4
+                    </div>
+                </div>
+                <div class="footer--grid__col col-4">
+                    <div class="footer-col-tiem">
+                        Item 1
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 2
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 3
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 4
+                    </div>
+                </div>
+                <div class="footer--grid__col col-4">
+                    <div class="footer-col-tiem">
+                        Item 1
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 2
+                    </div>
+                    <div class="footer-col-tiem">
+                        Item 3
+                    </div>
+                </div>
+            </div>
+            <div class="footer--grid__row">
+                <div class="footer--grid__col col-12">
+                    <div class="footer-col-tiem footer-text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <span class="top">
+        <a href="#top"><i class="fas fa-chevron-circle-up"></i></a>
+    </span>
+</body>
+</html>
